@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="my-logo">MOIZ</span>
+        <h2> Simple Calculator</h2>
+    </header>
+
+    <main>
+        <input type="text" name="input" id="my-input">
+
+        <section class="calc-btn-container">
+            <div class="row1">
+                <button onclick="lastValDelete()">DE</button>
+                <button onclick="clearAll()">C</button>
+                <button onclick="calc('%')">%</button>
+                <button onclick="calc('/')">&divide;</button>
+            </div>
+            <div class="row2">
+                <button onclick="calc(7)">7</button>
+                <button onclick="calc(8)">8</button>
+                <button onclick="calc(9)">9</button>
+                <button onclick="calc('*')">&times;</button>
+            </div>
+            <div class="row3">
+                <button onclick="calc(4)">4</button>
+                <button onclick="calc(5)">5</button>
+                <button onclick="calc(6)">6</button>
+                <button onclick="calc('-')">-</button>
+            </div>
+            <div class="row4">
+                <button onclick="calc(1)">1</button>
+                <button onclick="calc(2)">2</button>
+                <button onclick="calc(3)">3</button>
+                <button onclick="calc('+')">+</button>
+            </div>
+            <div class="row5">
+                <button onclick="calc(0)">0</button>
+                <button onclick="calc('.')">.</button>
+                <button onclick="calcResult()" class="result">=</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
