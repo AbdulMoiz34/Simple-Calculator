@@ -1,0 +1,90 @@
+:root {
+    --background-color: #f8f8f8;
+    --text-color: #000000;
+    --button-color: #fdfdfd;
+    --button-hover-color: #fafafa;
+    --highlight-color: #C5A11F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 330px;
+    background-color: var(--background-color);
+    padding: 6px;
+}
+
+.calc-header {
+    margin-top: 1.2rem;
+}
+
+.calc-header button {
+    border: none;
+    cursor: pointer;
+    color: #2d2d2d92;
+    background-color: transparent;
+}
+
+.calc-header>div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.calc-inp {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--background-color);
+     height: 80px;
+    text-align: right;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.container div {
+    display: flex;
+    margin-bottom: 5px;
+    gap: 4px;
+}
+
+.container>div>button {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    background-color: var(--button-color);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 7px;
+
+    &:hover {
+        background-color: var(--button-hover-color);
+    }
+}
+
+button.equal-btn {
+    background-color: var(--highlight-color) !important;
+    color: var(--button-color);
+}
