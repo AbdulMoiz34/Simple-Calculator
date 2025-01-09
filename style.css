@@ -57,7 +57,7 @@ main {
     outline: none;
     width: 100%;
     background-color: var(--background-color);
-     height: 80px;
+    height: 80px;
     text-align: right;
     padding: 0 16px;
     box-sizing: border-box;
@@ -87,4 +87,19 @@ main {
 button.equal-btn {
     background-color: var(--highlight-color) !important;
     color: var(--button-color);
+}
+
+footer {
+    margin-top: .5rem;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(94, 94, 94);
+    & a {
+        text-decoration: none;
+        color: rgb(94, 94, 94);
+        font-weight: bolder;
+        &:hover {
+         color: #000;
+        }
+    }
 }
