@@ -24,7 +24,7 @@
             <div class="calc-header">
                 <div>
                     <button><i class="fa-solid fa-bars"></i></button>
-                    <button><i class="fa-solid fa-clock-rotate-left"></i> </button>
+                    <button><i class="fa-solid fa-clock-rotate-left" onclick="toggleHistory()"></i> </button>
                 </div>
             </div>
             <input type="text" readonly class="calc-inp" id="inp">
@@ -58,9 +58,25 @@
                 <button onclick="calculator('.')">.</button>
                 <button class="equal-btn" onclick="calculator('=')">=</button>
             </div>
+            <div class="history-box hidden">
+                <div>
+                    <!-- <button>2*5</button> -->
+                    <!-- <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button>
+                    <button>hello</button> -->
+                </div>
+            </div>
             <footer>
-                <p>&copy;<small>2025</small> Developed by <a target="_blank" href="https://github.com/AbdulMoiz34">Abdul Moiz</a></p>
+                <p>&copy;<small>2025</small> Developed by <a target="_blank" href="https://github.com/AbdulMoiz34">Abdul
+                        Moiz</a></p>
             </footer>
+
         </div>
     </main>
     <script src="app.js"></script>
